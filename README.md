@@ -24,10 +24,32 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 ```
+## Usage
+```
+Please run the following commands
+
+mysql -u root -p
+
+Enter password when prompted
+
+source db/schema.sql
+
+npm run seed
+
+npm start
+```
+
+
 ## Mock UP
 ![](./Assets/13-orm-homework-demo-01.gif)
 ![](./Assets/13-orm-homework-demo-02.gif
 ![](./Assets/13-orm-homework-demo-03.gif)
 
+
+## GitHub repo
+https://github.com/briabr/Sequelize.E-commerce-Back-End/tree/main/Develop
+
 ## Walkthrough Video
+https://drive.google.com/file/d/1Vz-EJNbLMFadpJEi0gf6zYQWF8Hi9OBC/view
+
 

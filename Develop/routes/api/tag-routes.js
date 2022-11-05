@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   Tag.findAll({
     include: {
       model: Product,
-      attributes: ['product_name', 'price', 'stock', 'category_id']
+      // attributes: ['product_name', 'price', 'stock', 'category_id']
     }
   })
     .then(tagData => res.json(tagData))
@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
     },
     include: {
       model: Product,
-      attributes: ['product_name', 'price', 'stock', 'category_id']
+      // attributes: ['product_name', 'price', 'stock', 'category_id']
     }
   })
     .then(tagData => res.json(tagData))
@@ -59,7 +59,7 @@ router.put('/:id', (req, res) => {
   })
     .then(tagData => {
       if (!tagData){
-        res.status(404).json({message:'No tag found with this id'});
+        res.status(404).json({message:'There is no tag with this id'});
         return;
       }
       res.json(tagData);
@@ -79,7 +79,7 @@ router.delete('/:id', (req, res) => {
   })
   .then(tagData => {
     if (!tagData) {
-      res.status(404).json({message: 'No tag found with this id'});
+      res.status(404).json({message: 'There is no tag with this id'});
       return;
     }
     res.json(tagData);
