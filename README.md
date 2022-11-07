@@ -50,6 +50,5 @@ npm start
 https://github.com/briabr/Sequelize.E-commerce-Back-End/tree/main/Develop
 
 ## Walkthrough Video
-https://drive.google.com/file/d/1Vz-EJNbLMFadpJEi0gf6zYQWF8Hi9OBC/view
-
+https://drive.google.com/file/d/13Kp56KendUWwY254bhWb5pQYPRmooL3a/view
 
